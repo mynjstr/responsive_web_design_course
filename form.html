@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Typhoon CheckUp Form</title>
+  </head>
+  <body>
+    <h1 id="title">Typhoon CheckUp Form</h1>
+    <p id="description">Please fill out this form to spread awareness about your situation</p>
+    <form id="survey-form">
+      <fieldset>
+        <div class="input-elements">
+          <label for="name" id="name-label">Name <input placeholder="Name" id="name" name="name" type="text" required></label>
+        </div>
+        <div class="input-elements">
+          <label for="email" id="email-label">Email <input placeholder="Email" id="email" name="email" type="email" required></label>
+        </div>
+        <div class="input-elements">
+          <label for="number" id="number-label">Age(optional) <input placeholder="Age" id="number" min="5" max="100" name="number" type="number"></label>
+        </div>
+        <div class="select-elements">
+          <label>What is your current city</label>
+          <select id="dropdown">
+            <option value="">Select One City</option>
+            <option value="1">Caloocan</option>
+            <option value="2">Las Piñas</option>
+            <option value="3">Makati</option>
+            <option value="4">Malabon</option>
+            <option value="5">Mandaluyong</option>
+            <option value="6">Manila</option>
+            <option value="7">Marikina</option>
+            <option value="8">Muntinlupa</option>
+            <option value="9">Navotas</option>
+            <option value="10">Parañaque</option>
+            <option value="11">Pasay</option>
+            <option value="12">Pasig</option>
+            <option value="13">Quezon City</option>
+            <option value="14">San Juan</option>
+            <option value="15">Taguig</option>
+            <option value="16">Valenzuela</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="radio-element">
+          <legend>What is your current situation?</legend>
+          <label><input name="Situation" id="situation" type="radio" value="help" required/>Need Imeediate Help</label>
+          <label><input name="Situation" id="situation" type="radio" value="affected" required/>Affected but Bearable</label>
+          <label><input name="Situation" id="situation" type="radio" value="unaffected" required/>Not affected</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="checkbox-elements">
+          <legend>What necessities do you have?</legend>
+          <label><input name="necessities" id="necessities" type="checkbox" value="Food" required/>Food and Drinks</label>
+          <label><input name="necessities" id="necessities" type="checkbox" value="Tools" required/>Safety Tools</label>  
+          <label><input name="necessities" id="necessities" type="checkbox" value="Kit" required/>First Aid Kit</label>
+          <label><input name="necessities" id="necessities" type="checkbox" value="Personal" required/>Personal Belongings</label>
+      </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="textarea">
+          <label for="corcern">State your other Concerns:
+            <textarea id="concern" name="concern" rows="3" cols="30" placeholder="What are your other concerns?"></textarea>
+          </label>
+      </div>
+      </fieldset>
+      <div class="submit-elements">
+      <input id="submit" type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
